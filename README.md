@@ -6,6 +6,8 @@ To understand how music is made we need to know a bit of musical theory. The bas
 
 This is where this application comes to help. By just choosing the scale the pianist wants to know about, the application gives the notes of that scale and also illustrates it on a virtual keyboard. The application can also tell which scale the pianist is playing on by selecting the notes he thinks is in that scale. Similarly, the application can select and identify chords which the pianist desires.
 
+In a guitar, there is no specific pattern to identify scales like in a piano or keyboard; it only depends on the length of the vibrating string whose positions are to be memorized. Guitarists too face the problem of remembering innumerous chords and this application serves them in that purpose.
+
 Front End :
   Netbeans IDE
   
