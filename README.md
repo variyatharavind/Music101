@@ -14,4 +14,7 @@ Front End :
 Back End:
   MySQL
   
+  
 'ChordsSQL.txt' contains the SQL commands required to create the required databases and tables.
+
+'Music101' is the NetBeans Project folder which contains all the classes and frames of the project.
