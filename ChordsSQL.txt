@@ -1,0 +1,500 @@
+create database Music101DB;
+use Music101DB;
+
+
+create table scales
+(ChordName varchar(10)not null,
+One varchar(2) ,
+Two varchar(2),
+Three varchar(2),
+Four varchar(2),	
+Five varchar(2),
+Six varchar(2),
+Seven varchar(2),
+Eight varchar(2));
+
+create table scalesNum
+(ChordName varchar(10)not null,
+One int(2) ,
+Two int(2),
+Three int(2),
+Four int(2),
+Five int(2),
+Six int(2),
+Seven int(2),
+Eight int(2));
+
+
+
+
+insert into scales values 
+("C major","C","D","E","F","G","A","B","C");
+insert into scales values
+("D major","D","E","F#","G","A","B","C#","D");
+insert into scales values
+("E major","E","F#","G#","A","B","C#","D#","E");
+insert into scales values
+("F major","F","G","A","Bb","C","D","E","F");
+insert into scales values 
+("G major","G","A","B","C","D","E","F#","G");
+insert into scales values
+("A major","A","B","C#","D","E","F#","G#","A");
+insert into scales values
+("B major","B","C#","D#","E","F#","G#","A#","B");
+
+
+insert into scales values
+("C minor","C","D","Eb","F","G","Ab","Bb","C");
+insert into scales values
+("D minor","D","E","F","G","A","Bb","C","D");
+insert into scales values
+("E minor","E","F#","G","A","B","C","D","E");
+insert into scales values
+("F minor","F","G","Ab","Bb","C","Db","Eb","F");
+insert into scales values
+("G minor","G","A","Bb","C","D","Eb","F","G");
+insert into scales values
+("A minor","A","B","C","D","E","F","G","A");
+insert into scales values
+("B minor","B","C#","D","E","F#","G","A","B");
+
+insert into scales values
+("Db major","Db","Eb","F","Gb","Ab","Bb","C","Db");
+insert into scales values
+("Eb major","Eb","F","G","Ab","Bb","C","D","Eb");
+insert into scales values
+("Gb major","Gb","Ab","Bb","B","Db","Eb","F","Gb");
+insert into scales values
+("Ab major","Ab","Bb","C","Db","Eb","F","G","Ab");
+insert into scales values
+("Bb major","Bb","C","D","Eb","F","G","A","Bb");
+
+
+insert into scales values
+("C# minor","C#","D#","E","F#","G#","A","B","C#");
+insert into scales values
+("D# minor","D#","F","F#","G#","A#","B","C#","D#");
+insert into scales values
+("F# minor","F#","G#","A","B","C#","D","E","F#");
+insert into scales values
+("G# minor","G#","A#","B","C#","D#","E","F#","G#");
+insert into scales values
+("A# minor","A#","C","C#","D#","F","F#","G#","A#");
+
+
+insert into scales values
+("C# major","C#","D#","F","F#","G#","A#","C","C#");
+insert into scales values
+("D# major","D#","F","G","G#","A#","C","D","D#");
+insert into scales values
+("F# major","F#","G#","A#","B","C#","D#","F","F#");
+insert into scales values
+("G# major","G#","A#","C","C#","D#","F","G","G#");
+insert into scales values
+("A# major","A#","C","D","D#","F","G","A","A#");
+
+
+insert into scales values
+("Db minor","Db","Eb","E","Gb","Ab","A","B","Db");
+insert into scales values
+("Eb minor","Eb","F","Gb","Ab","Bb","B","Db","Eb");
+insert into scales values
+("Gb minor","Gb","Ab","A","B","Db","D","E","Gb");
+insert into scales values
+("Ab minor","Ab","Bb","B","Db","Eb","E","Gb","Ab");
+insert into scales values
+("Bb minor","Bb","C","Db","Eb","F","Gb","Ab","Bb");
+
+	
+insert into scales values
+("Cb major","Cb","Db","Eb","E","Gb","Ab","Bb","Cb");
+insert into scales values
+("Cb minor","Cb","Db","D","E","Gb","G","A","Cb");
+insert into scales values
+("Fb major","Fb","Gb","Ab","A","B","Db","Eb","Fb");
+insert into scales values
+("Fb minor","Fb","Gb","G","A","B","C","D","E");
+insert into scales values 
+("B# major","B#","D","E","F","G","A","B","C");
+insert into scales values
+("B# minor","B#","D","D#","F","G","G#","A#","C");
+insert into scales values
+("E# major","E#","G","A","A#","C","D","E","F");
+insert into scales values
+("E# minor","E#","G","G#","A#","C","C#","D#","F");
+
+
+
+
+
+insert into scalesNum values 
+("C major",1,3,5,6,8,10,12,1);
+insert into scalesNum values
+("D major",3,5,7,8,10,12,2,3);
+insert into scalesNum values
+("E major",5,7,9,10,12,2,4,5);
+insert into scalesNum values
+("F major",6,8,10,11,1,3,5,6);
+insert into scalesNum values 
+("G major",8,10,12,1,3,5,7,8);
+insert into scalesNum values
+("A major",10,12,2,3,5,7,9,10);
+insert into scalesNum values
+("B major",12,2,4,5,7,9,11,12);
+
+
+
+insert into scalesNum values
+("C minor",1,3,4,6,8,9,11,1);
+insert into scalesNum values
+("D minor",3,5,6,8,10,11,1,3);
+insert into scalesNum values
+("E minor",5,7,8,10,12,1,3,5);
+insert into scalesNum values
+("F minor",6,8,9,11,1,2,4,6);
+insert into scalesNum values
+("G minor",8,10,11,1,3,4,6,8);
+insert into scalesNum values
+("A minor",10,12,1,3,5,6,8,10);
+insert into scalesNum values
+("B minor",12,2,3,5,7,8,10,12);
+
+insert into scalesNum values
+("Db major",2,4,6,7,9,11,1,2);
+insert into scalesNum values
+("Eb major",4,6,8,9,11,1,3,4);
+insert into scalesNum values
+("Gb major",7,9,11,12,2,4,6,7);
+insert into scalesNum values
+("Ab major",9,11,1,2,4,6,8,9);
+insert into scalesNum values
+("Bb major",11,1,3,4,6,8,10,11);
+
+
+insert into scalesNum values
+("C# minor",2,4,5,7,9,10,12,2);
+insert into scalesNum values
+("D# minor",4,6,7,9,11,12,2,4);
+insert into scalesNum values
+("F# minor",7,9,10,12,2,3,5,7);
+insert into scalesNum values
+("G# minor",9,11,12,2,4,5,7,9);
+insert into scalesNum values
+("A# minor",11,1,2,4,6,7,9,11);
+
+
+insert into scalesNum values
+("C# major",2,4,6,7,9,11,1,2);
+insert into scalesNum values
+("D# major",4,6,8,9,11,1,3,4);
+insert into scalesNum values
+("F# major",7,9,11,12,2,4,6,7);
+insert into scalesNum values
+("G# major",9,11,1,2,4,6,8,9);
+insert into scalesNum values
+("A# major",11,1,3,4,6,8,10,11);
+
+
+insert into scalesNum values
+("Db minor",2,4,5,7,9,10,12,2);
+insert into scalesNum values
+("Eb minor",4,6,7,9,11,12,2,4);
+insert into scalesNum values
+("Gb minor",7,9,10,12,2,3,5,7);
+insert into scalesNum values
+("Ab minor",9,11,12,2,4,5,7,9);
+insert into scalesNum values
+("Bb minor",11,1,2,4,6,7,9,11);
+
+
+create table gchords
+(ChordName varchar(7) primary key,
+one int(2),
+two int(2) ,
+three int(2),
+four int(2) ,
+five int(2) ,
+six int(2) ,
+outone char(1),
+outtwo char(1),
+outthree char(1),
+outfour char(1) ,
+outfive char(1) ,
+outsix char(1) ,
+fretnum varchar(1));
+
+insert into gchords values
+("Ab ",1,3,3,2,1,1,"","","","","","","4");
+insert into gchords values
+("Ab m",1,3,3,1,1,1,"","","","","","","4");
+insert into gchords values
+("Ab 6",4,3,1,1,1,1,"","","","","","","");
+insert into gchords values
+("Ab 7",0,0,1,1,1,2,"X","X","","","","","");
+insert into gchords values
+("Ab 9",0,0,1,3,1,2,"X","X","","","","","");
+insert into gchords values
+("Ab m6",0,0,0,4,4,4,"X","X","X","","","","");
+insert into gchords values
+("Ab m7",0,0,1,1,0,2,"X","X","","","O","","");
+insert into gchords values
+("Ab maj7",0,0,1,1,1,3,"X","X","","","","","");
+insert into gchords values
+("Ab dim",0,0,0,1,0,1,"X","X","O","","O","","");
+insert into gchords values
+("Ab +",0,0,2,1,1,0,"X","X","","","","O","");
+insert into gchords values
+("Ab sus",0,0,1,1,2,4,"X","X","","","","","");
+
+insert into gchords values
+("A ",0,0,2,2,2,0,"X","O","","","","O","");
+insert into gchords values
+("A m",0,0,2,2,1,0,"X","O","","","","O","");
+insert into gchords values
+("A 6",0,0,2,2,2,2,"X","O","","","","","");
+insert into gchords values
+("A 7",0,0,2,2,2,3,"X","O","","","","","");
+insert into gchords values
+("A 9",0,0,2,4,2,3,"X","O","","","","","");
+insert into gchords values
+("A m6",0,0,2,2,1,2,"X","O","","","","","");
+insert into gchords values
+("A m7",0,0,2,2,1,3,"X","O","","","","","");
+insert into gchords values
+("A maj7",0,0,2,1,2,0,"X","O","","","","O","");
+insert into gchords values
+("A dim",0,0,1,2,1,2,"X","X","","","","","");
+insert into gchords values
+("A +",0,0,3,2,2,1,"X","O","","","","","");
+insert into gchords values
+("A sus",0,0,1,1,2,4,"X","X","","","","","");
+
+insert into gchords values
+("Bb ",0,1,3,3,3,1,"X","","","","","","");
+insert into gchords values
+("Bb m",0,1,3,3,2,1,"X","","","","","","");
+insert into gchords values
+("Bb 6",1,1,3,3,3,3,"","","","","","","");
+insert into gchords values
+("Bb 7",0,0,1,1,1,2,"X","X","","","","","3");
+insert into gchords values
+("Bb 9",1,1,3,1,1,1,"","","","","","","3");
+insert into gchords values
+("Bb m6",0,0,3,3,2,3,"X","X","","","","","");
+insert into gchords values
+("Bb m7",0,0,3,3,2,4,"X","X","","","","","");
+insert into gchords values
+("Bb maj7",0,1,3,2,3,0,"X","","","","","X","");
+insert into gchords values
+("Bb dim",0,0,2,3,2,3,"X","X","","","","","");
+insert into gchords values
+("Bb +",0,0,0,3,3,2,"X","X","O","","","","");
+insert into gchords values
+("Bb sus",0,0,3,3,4,1,"X","X","","","","","");
+
+insert into gchords values
+("B ",0,2,4,4,4,2,"X","","","","","","");
+insert into gchords values
+("B m",0,2,4,4,3,2,"X","","","","","","");
+insert into gchords values
+("B 6",2,2,4,4,4,4,"","","","","","","");
+insert into gchords values
+("B 7",0,2,1,2,0,2,"X","","","","O","","");
+insert into gchords values
+("B 9",0,2,1,2,2,2,"X","","","","","","");
+insert into gchords values
+("B m6",0,0,4,4,3,4,"X","X","","","","","");
+insert into gchords values
+("B m7",0,1,3,1,2,1,"X","","","","","","2");
+insert into gchords values
+("B maj7",0,2,4,3,4,0,"X","","","","","X","");
+insert into gchords values
+("B dim",0,0,0,1,0,1,"X","X","O","","O","","");
+insert into gchords values
+("B +",0,0,3,2,2,1,"X","X","","","","","3");
+insert into gchords values
+("B sus",0,0,3,3,4,1,"X","X","","","","","2");
+
+insert into gchords values
+("C ",3,3,2,0,1,0,"","","","O","","O","");
+insert into gchords values
+("C m",0,1,3,3,2,1,"X","","","","","","3");
+insert into gchords values
+("C 6",0,0,2,2,1,3,"X","X","","","","","");
+insert into gchords values
+("C 7",0,3,2,3,1,0,"X","","","","","O","");
+insert into gchords values
+("C 9",0,3,2,3,3,3,"X","","","","","","");
+insert into gchords values
+("C m6",0,0,1,2,1,3,"X","X","","","","","");
+insert into gchords values
+("C m7",0,0,1,3,1,3,"X","X","","","","","");
+insert into gchords values
+("C maj7",0,3,2,0,0,0,"X","","","O","O","O","");
+insert into gchords values
+("C dim",0,0,1,2,1,2,"X","X","","","","","");
+insert into gchords values
+("C +",0,0,2,1,1,0,"X","X","","","","O","");
+insert into gchords values
+("C sus",0,0,3,0,1,3,"X","X","","O","","","");
+
+insert into gchords values
+("Db ",0,0,3,1,2,1,"X","X","","","","","");
+insert into gchords values
+("Db m",0,0,2,1,2,0,"X","X","","","","O","");
+insert into gchords values
+("Db 6",0,0,3,3,2,4,"X","X","","","","","");
+insert into gchords values
+("Db 7",0,0,3,4,2,4,"X","X","","","","","");
+insert into gchords values
+("Db 9",0,4,3,4,4,4,"X","","","","","","");
+insert into gchords values
+("Db m6",0,0,2,3,2,4,"X","X","","","","","");
+insert into gchords values
+("Db m7",0,0,2,4,2,4,"X","X","","","","","");
+insert into gchords values
+("Db maj7",0,4,3,1,1,1,"X","","","","","","");
+insert into gchords values
+("Db dim",0,0,2,3,2,3,"X","X","","","","","");
+insert into gchords values
+("Db +",0,0,3,2,2,1,"X","X","","","","","");
+insert into gchords values
+("Db sus",0,0,3,3,4,1,"X","X","","","","","");
+
+insert into gchords values
+("D ",0,0,0,2,3,2,"X","X","O","","","","");
+insert into gchords values
+("D m",0,0,0,2,3,1,"X","X","O","","","","");
+insert into gchords values
+("D 6",0,0,0,2,0,2,"X","O","O","","O","","");
+insert into gchords values
+("D 7",0,0,0,2,1,2,"X","X","O","","","","");
+insert into gchords values
+("D 9",2,0,0,2,1,0,"","O","O","","","O","");
+insert into gchords values
+("D m6",0,0,0,2,0,1,"X","X","O","","O","","");
+insert into gchords values
+("D m7",0,0,0,2,1,1,"X","X","O","","","","");
+insert into gchords values
+("D maj7",0,0,0,2,2,2,"X","X","O","","","","");
+insert into gchords values
+("D dim",0,0,0,1,0,1,"X","X","O","","O","","");
+insert into gchords values
+("D +",0,0,0,3,3,2,"X","X","O","","","","");
+insert into gchords values
+("D sus",0,0,0,2,3,3,"X","X","O","","","","");
+
+insert into gchords values
+("Eb ",0,0,3,1,2,1,"X","X","","","","","3");
+insert into gchords values
+("Eb m",0,0,4,3,4,2,"X","X","","","","","");
+insert into gchords values
+("Eb 6",0,0,1,3,1,3,"X","X","","","","","");
+insert into gchords values
+("Eb 7",0,0,1,3,2,3,"X","X","","","","","");
+insert into gchords values
+("Eb 9",1,1,1,3,2,1,"","","","","","","");
+insert into gchords values
+("Eb m6",0,0,1,3,1,2,"X","X","","","","","");
+insert into gchords values
+("Eb m7",0,0,1,3,2,2,"X","X","","","","","");
+insert into gchords values
+("Eb maj7",0,0,1,3,3,3,"X","X","","","","","");
+insert into gchords values
+("Eb dim",0,0,1,2,1,2,"X","X","","","","","");
+insert into gchords values
+("Eb +",0,0,1,0,0,3,"X","X","","O","O","","");
+insert into gchords values
+("Eb sus",0,0,1,3,4,4,"X","X","","","","","");
+
+insert into gchords values
+("E ",0,2,2,1,0,0,"O","","","","O","O","");
+insert into gchords values
+("E m",0,2,2,0,0,0,"O","","","O","O","O","");
+insert into gchords values
+("E 6",0,2,2,1,2,0,"O","","","","","O","");
+insert into gchords values
+("E 7",0,2,2,1,3,0,"O","","","","","O","");
+insert into gchords values
+("E 9",0,2,0,1,0,2,"O","","O","","O","","");
+insert into gchords values
+("E m6",0,2,2,0,2,0,"O","","","O","","O","");
+insert into gchords values
+("E m7",0,2,0,0,0,0,"O","","O","O","O","O","");
+insert into gchords values
+("E maj7",0,2,1,1,0,0,"O","","","","O","O","");
+insert into gchords values
+("E dim",0,0,2,3,2,3,"X","X","","","","","");
+insert into gchords values
+("E +",0,0,2,1,1,0,"X","X","","","","O","");
+insert into gchords values
+("E sus",0,2,2,2,0,0,"O","","","","O","O","");
+
+insert into gchords values
+("F ",1,3,3,2,1,1,"","","","","","","");
+insert into gchords values
+("F m",1,3,3,1,1,1,"","","","","","","");
+insert into gchords values
+("F 6",0,0,0,2,1,1,"X","X","O","","","","");
+insert into gchords values
+("F 7",1,3,1,2,1,1,"","","","","","","");
+insert into gchords values
+("F 9",0,0,3,2,4,3,"X","X","","","","","");
+insert into gchords values
+("F m6",0,0,0,1,1,1,"X","X","O","","","","");
+insert into gchords values
+("F m7",1,3,1,1,1,1,"","","","","","","");
+insert into gchords values
+("F maj7",0,0,3,2,1,0,"X","X","","","","O","");
+insert into gchords values
+("F dim",0,0,0,1,0,1,"X","X","O","","O","","");
+insert into gchords values
+("F +",0,0,3,2,2,1,"X","X","","","","","");
+insert into gchords values
+("F sus",0,0,3,3,1,1,"X","X","","","","","");
+
+insert into gchords values
+("Gb ",2,4,4,3,2,2,"","","","","","","");
+insert into gchords values
+("Gb m",2,4,4,2,2,2,"","","","","","","");
+insert into gchords values
+("Gb 6",0,4,4,3,4,0,"X","","","","","X","");
+insert into gchords values
+("Gb 7",0,0,4,3,2,0,"X","X","","","","O","");
+insert into gchords values
+("Gb 9",0,0,2,1,3,2,"X","X","","","","","3");
+insert into gchords values
+("Gb m6",0,0,1,2,2,2,"X","X","","","","","");
+insert into gchords values
+("Gb m7",0,0,2,2,2,2,"X","X","","","","","");
+insert into gchords values
+("Gb maj7",0,0,4,3,2,1,"X","X","","","","","");
+insert into gchords values
+("Gb dim",0,0,1,2,1,2,"X","X","","","","","");
+insert into gchords values
+("Gb +",0,0,4,3,3,2,"X","X","","","","","");
+insert into gchords values
+("Gb sus",0,0,4,4,2,2,"X","X","","","","","");
+
+insert into gchords values
+("G ",3,2,0,0,0,3,"","","O","O","O",""," ");
+insert into gchords values
+("G m",1,3,3,1,1,1,"","","","","","","3");
+insert into gchords values
+("G 6",3,2,0,0,0,0,"","","O","O","O","O","");
+insert into gchords values
+("G 7",3,2,0,0,0,1,"","","O","O","O","","");
+insert into gchords values
+("G 9",3,0,0,2,0,1,"","O","O","","O","","");
+insert into gchords values
+("G m6",0,0,2,3,3,3,"X","X","","","","","");
+insert into gchords values
+("G m7",1,3,1,1,1,1,"","","","","","","3");
+insert into gchords values
+("G maj7",0,0,4,3,2,1,"X","X","","","","","2");
+insert into gchords values
+("G dim",0,0,2,3,2,3,"X","X","","","","","");
+insert into gchords values
+("G +",0,0,1,0,0,3,"X","X","","O","O","","");
+insert into gchords values
+("G sus",0,0,0,0,1,3,"X","X","O","O","","","");
